@@ -1,0 +1,16 @@
+*{outline: 1px solid rgba(25,0,0,0.4);}
+body{
+  color: white;
+}
+.portada{
+  background-image: url(fondo.jpg);
+  height: 600px;
+}
+
+.menu
+{
+
+}
+.abajo{
+  padding-top:160px;
+}
