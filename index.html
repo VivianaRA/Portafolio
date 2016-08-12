@@ -6,24 +6,28 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <title>Viviana RA</title>
 </head>
 <body>
-  <div class="portada">
-    <img src="fb.jpg">
-    <header>
+    <header class="absolute">
       <div class="row menu">
         <h3>Viviana Rodriguez </h3>
-        <ul class="lista">
+        <ul class="lista list-unstyled list-inline">
   							<li ><a class="text-decoration-none text-center" href="#aboutme">About Me</a></li>
   							<li ><a class="text-decoration-none text-center" href="#mywork">Check my Work</a></li>
   							<li ><a class="text-decoration-none text-center" href="#myskills">My Skills</a></li>
   							<li ><a class="text-decoration-none text-center" href="#">Blabla</a></li>
   			</ul>
       </div>
-      <div class="row abajo">
+  <div class="portada">
+    <div class="relative">
+      <img class="img-responsive"src="fb.jpg">
+    </div>
+      <div class="row container abajo">
         <h1>Front-End Developer</h1>
-        <h2>Rethinking my relationship with technology.</h2>
+        <h2 style="font-family: 'Crimson Text', serif;">Rethinking my relationship with technology.</h2>
       </div>
     </header>
   </div>
@@ -41,7 +45,13 @@
   <div id="myskills" class="">
     <section class="container">
       <div class="col-md-2">
-        <img src="png/gth.png" alt="" />
+        <img src="png/file-html.png" alt="" />
+      </div>
+      <div class="col-md-2">
+        <img src="png/file-css.png" alt="" />
+      </div>
+      <div class="col-md-2">
+        <img src="png/file-java.png" alt="" />
       </div>
       <div class="col-md-2">
         <img src="png/gth.png" alt="" />
@@ -50,23 +60,17 @@
         <img src="png/gth.png" alt="" />
       </div>
       <div class="col-md-2">
-        <img src="png/gth.png" alt="" />
-      </div>
-      <div class="col-md-2">
-        <img src="png/gth.png" alt="" />
-      </div>
-      <div class="col-md-2">
-        <img src="png/gth.png" alt="" />
+        <img src="png/github.png" alt="" />
       </div>
 
     </section>
   </div>
 
-  <div class="">
+  <div class="proyects">
     <h2>My projects</h2>
     <div class="container">
         <div class="col-md-6">
-					<img class="img-responsive" src="IMG_7050.jpg">
+					<img class="img-responsive vertical" src="IMG_7050.jpg">
 					<p class="naj">Floral Fraganmce</p>
 					<P>Life Amanda Rey 10th March 2015</P>
 				</div>
@@ -81,7 +85,7 @@
 					<P>Life Amanda Rey 10th March 2015</P>
 				</div>
 				<div class="col-md-6">
-					<img class="img-responsive" src="IMG_7050.jpg">
+					<img class="img-responsive vertical" src="IMG_7050.jpg">
 					<p class="naj">Floral Fraganmce</p>
 					<P>Life Amanda Rey 10th March 2015</P>
 				</div><div class="col-md-6">
@@ -97,9 +101,19 @@
     </div>
   </div>
   <div class="">
-    <section>
-
+    <section class="collagegrande">
+<img class="collage"src="UM1.jpg" alt="" />
+<img class="collage"src="UM2.jpg" alt="" />
+<img class="collage"src="UM3.jpg" alt="" />
+<img class="collage"src="UM4.jpg" alt="" />
+<img class="collage"src="UM5.jpg" alt="" />
+<img class="collage"src="UM6.jpg" alt="" />
     </section>
+    <div class="div">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt ducimus aliquam dicta! Dolores cum molestiae voluptas voluptatum, voluptates pariatur tenetur, nam totam reprehenderit fugit consectetur amet alias, ex quia reiciendis.
+      </p>
+    </div>
   </div>
   <div class="">
     <section>
@@ -112,6 +126,41 @@
     </section>
   </div>
   <footer>
+    <div class="prepie">
+		<div class="container">
+			<div class="folus">
+					<div class="texprepie">
+						<h2>Follow Us</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+					<div class="col-md-12 reds">
+						<ul class="list-inline">
+						<li>
+							<a href="#"><img src="img/facebookgris.png"></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/twitter.png"></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/linkedin2.png"></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/pinterest.png"></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/googlegris.png"></a>
+						</li>
+						</ul>
+					</div>
+				</div>
+		</div>
+	</div>
+	<div class="piedepagina">
+		<div class="row">
+			<p><span class="glyphicon glyphicon-copyright-mark"></span>primes-2015 Laboratoria.la</p>
+		</div>
+	</div>
 
   </footer>
 </body>

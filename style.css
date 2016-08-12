@@ -8,19 +8,24 @@ body{
   color: rgb(115, 111, 109);
 }
 
-.portada img{
-  position: absolute;;
-  height: 700px;
+.relative{
+  position: relative;
+  height: 100vh;
   z-index: -1000;
   left: 0;
   width: 100%;
-  }
+
+
+}
+.absolute{
+  position: absolute;
+}
 .menu
 {
 position: relative;;
 }
-.lista{
-  display: inline-block;
+.lista a{
+  color: #FFFFFF
 }
 
 .abajo{
@@ -32,7 +37,7 @@ position: relative;;
 .box{
   height: 300px;
 }
-h3::after {
+h3:after {
     content: '';
     display: block;
     height: 2px;
@@ -48,6 +53,25 @@ h3::after {
 .nav-pills a{
   color: white;
 }
-
-
+.proyects{
+  background-color: #E1E1E1;
+}
+.collage{
+    height: 50%;
+    width: -webkit-calc(100% / 3);
+    width: calc(100% / 3);
+    float: left;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.collagegrande{
+  position: relative;
+}
+.div{
+  position: absolute;
+}
+footer{
+  background-color:#FFBF00;
 }
