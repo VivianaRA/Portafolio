@@ -1,7 +1,7 @@
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
 console.log(scroll);
-    if (scroll > 2) {
+    if (scroll > 30) {
         $("header").addClass("scrolling");
     } else {
         $("header").removeClass("scrolling");

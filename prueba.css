@@ -1,9 +1,4 @@
 
-.links {
-  width: 90%;
-  margin: 0 auto;
-}
-
 .link {
   display: inline-block;
   vertical-align: top;
@@ -18,47 +13,35 @@
   font-size: 0.8rem;
   margin: 10px;
   position: relative;
-
-  span {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    text-align: center;
-  }
-}
-.underline {
-  border: 2px solid transparent;
-
-  &::after {
-    width: 0%;
-    height: 2px;
-    display: block;
-    background-color: #fff;
-    content: " ";
-    position: absolute;
-    top: 34px;
-    left: 50%;
-    transition: left 0.2s cubic-bezier(0.215, 0.61, 0.355, 1), width 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
-  }
-
-  &:hover {
-    &::after {
-      width: 100%;
-      height: 2px;
-      display: block;
-      background-color: #fff;
-      content: " ";
-      position: absolute;
-      top: 34px;
-      left: 0;
-    }
-  }
 }
 
+li a {
+  margin-righ:20px;
+  text-decoration:none;
+  color:#999;
+  transition:all 1s;
+  -webkit-transition:all 1s;
+  -moz-transition:all 1s;
+}
 
+li a i {
+  display:block;
+  padding:10px 0 0 0;
+  border-top:2px solid #999;
+  width:0;
+  transition:all 1s;
+  -webkit-transition:all 1s;
+  -moz-transition:all 1s;
+}
 
+li a:hover {
+  color:#FFF;
+}
+
+li a:hover i {
+  width:100%;
+  border-top:2px solid #FFF;
+}
 
 body{
   color: #FFF;
@@ -84,6 +67,7 @@ header{
   list-style: none;
   display: inline-block;
   margin-right: 20px;
+  z-index: 1000;
 }
 
 .primary-menu ul li a {
@@ -101,7 +85,8 @@ header{
   position: fixed;
   background: rgba(255, 255, 255, 0.85);
   width: 100%;
-  transition-duration: 6s;
+  transition-duration: 5s;
+  z-index: 1000%;
 }
 .abajo{
   padding-top:180px;
@@ -165,6 +150,114 @@ header .nav-wrapper .close {
 header .nav-wrapper .close {
     display: inline-block;
 }
+/*menu responsive*/
+header a {
+    text-decoration: none;
+}
+
+header .nav-wrapper,header .open-overlay {
+    z-index: 100;
+}
+
+header .open-overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 0 10px 30px;
+    font-size: 16px;
+}
+
+header .open-overlay .menu-overlay {
+    color: #2D2D2D
+}
+
+header .nav-wrapper {
+    text-align: center;
+    position: fixed;
+width: 100%;
+    padding: 30px 0px;
+}
+
+@media all and (max-width: 600px) {
+    header .open-overlay {
+        display:block;
+    }
+
+    header .nav-wrapper {
+        height: 100vh;
+        background-color: #2D2D2D;
+        text-align: left;
+        padding-left: 30px;
+        display: none;
+    }
+
+    header .nav-wrapper .main-nav {
+        margin-bottom: 75px;
+    }
+}
+
+@media all and (min-width: 600px) {
+    header .nav-wrapper {
+        -webkit-transition:color 1s ease,background-color 1s ease;
+        transition: color 1s ease,background-color 1s ease;
+        display: block!important;
+        opacity: 1!important;
+    }
+
+    header .nav-wrapper.scroll {
+        background-color: #fff;
+    }
+
+    header .nav-wrapper.scroll .main-nav .menu-item {
+        color: #000;
+    }
+
+    header .nav-wrapper.scroll .main-nav .menu-item.hover-animation:after {
+        background: #000;
+    }
+}
+header .nav-wrapper .main-nav .menu-item {
+    display: inline-block;
+    font-size: 18px;
+    margin-right: 40px;
+    color: #fff;
+    text-decoration: none;
+}
+
+header .nav-wrapper .main-nav .menu-item:after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background: 0 0;
+    -webkit-transition: width .5s ease,background-color .5s ease;
+    transition: width .5s ease,background-color .5s ease;
+}
+
+header .nav-wrapper .main-nav .menu-item.hover-animation:after {
+    width: 100%;
+    background: #fff;
+}
+
+@media all and (max-width: 600px) {
+    header .nav-wrapper .main-nav .menu-item {
+        display:block;
+        font-size: 23px;
+    }
+
+    header .nav-wrapper .main-nav .menu-item:after {
+        height: 0;
+        -webkit-transition: width 0s ease,background-color 0s ease;
+        transition: width 0s ease,background-color 0s ease;
+    }
+
+    header .nav-wrapper .main-nav .menu-item.hover-animation:after {
+        width: 0;
+        background: 0 0
+    }
+}
+
 /*aboutme */
 .box{
   height: 360px;
