@@ -63,6 +63,9 @@
 body{
   color: #FFF;
 }
+header{
+  position: fixed;
+}
 .portada {
   font-family: roboto;
   width: 100%;
@@ -90,6 +93,10 @@ body{
   text-transform: uppercase;
 }
 
+.scrolling a {
+  color: #000 !important;
+
+   }
 .scrolling {
   position: fixed;
   background: rgba(255, 255, 255, 0.85);
@@ -104,10 +111,64 @@ body{
   height: 60px;
   position: absolute;
   bottom: 10%;
+  left:47%;
+}
+@@media only screen and (max-width: 500px)  {
+
+}
+.responsive a{
+    margin: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: 0 0;
+    outline: 0;
+    text-decoration: none;
+}
+header .open-overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 0 10px 30px;
+    font-size: 16px;
+}
+@media (max-width: 600px)
+header .open-overlay {
+    display: block;
+}
+header .open-overlay .menu-overlay {
+    color: #2D2D2D;
+}
+header .nav-wrapper {
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    padding: 30px 0;
+}
+@media (max-width: 600px)
+header .nav-wrapper {
+    height: 100vh;
+    background-color: #2D2D2D;
+    text-align: left;
+    padding-left: 30px;
+    display: none;
+}
+header .nav-wrapper, header .open-overlay {
+    z-index: 100;
+}
+header .nav-wrapper .close {
+    color: #fff;
+    margin-bottom: 50px;
+    display: none;
+}
+@media (max-width: 600px)
+header .nav-wrapper .close {
+    display: inline-block;
 }
 /*aboutme */
 .box{
   height: 360px;
+  padding: 15% 20%;
 }
 .gray{
   color: rgb(115, 111, 109);
@@ -115,4 +176,93 @@ body{
 .sizeimage{
   height: 60px;
   display: inline-block;
+}
+/*proyects */
+.ejemplo-3 .contenedor-img{
+  width: 40%;
+  padding: 5%;
+}
+.ejemplo-3 img {
+transition: all 0.4s ease-in-out;
+}
+.ejemplo-3 .mascara {
+background-color: rgb(255, 191, 0);
+transform: translateX(-300px);/*Desplazamos 300px a la izquierda*/
+opacity: 1;
+transition: all 0.4s ease-in-out;
+}
+.ejemplo-3 h2 p{
+color: #000;
+}
+
+.ejemplo-3:hover .mascara {
+transform: translateX(0px);/*Regresamos a su posicioón original*/
+}
+.ejemplo-3:hover .contenedor-img {
+transform: translateX(300px);/*Desplazamos 300px a la derecha*/
+}
+
+
+body section.color-box {
+    height: 100vh;
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.overlay-wash {
+    background-color: #000040;
+    opacity: .55;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+.overlay-wash, .section-6 {
+    height: 100%;
+    width: 100%;
+}
+.section-6 article {
+    position: absolute;
+    top: 46%;
+    z-index: 2;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    opacity: 0;
+}
+.section-6 article, body h1 {
+    font-size: 24px;
+    text-align: center;
+}
+.section-6 .research-photo {
+    height: 50%;
+    width: -webkit-calc(100% / 3);
+    width: calc(100% / 3);
+    float: left;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.section-6 .research-photo.photo-1 {
+    background-image: url(images/UM1.jpg);
+}
+.section-6 .research-photo.photo-2 {
+    background-image: url(images/UM2.jpg);
+}
+.section-6 .research-photo.photo-3 {
+    background-image: url(images/UM3.jpg);
+}
+.section-6 .research-photo.photo-4 {
+    background-image: url(images/UM4.jpg);
+}
+.section-6 .research-photo.photo-5 {
+    background-image: url(images/UM5.jpg);
+}
+.section-6 .research-photo.photo-6 {
+    background-image: url(images/UM6.jpg);
+}
+/*footer*/
+footer{
+  background-color:#FFBF00;
 }
