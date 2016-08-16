@@ -67,7 +67,6 @@ header{
   list-style: none;
   display: inline-block;
   margin-right: 20px;
-  z-index: 1000;
 }
 
 .primary-menu ul li a {
@@ -85,8 +84,7 @@ header{
   position: fixed;
   background: rgba(255, 255, 255, 0.85);
   width: 100%;
-  transition-duration: 5s;
-  z-index: 1000%;
+  transition-duration: 3s;
 }
 .abajo{
   padding-top:180px;
